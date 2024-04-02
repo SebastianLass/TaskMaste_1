@@ -11,6 +11,7 @@ include_once ("../include/procesar_formulario.php");
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../css/output.css">
   <title>TaskMaste-Invitar</title>
 </head>
@@ -40,18 +41,18 @@ include_once ("../include/procesar_formulario.php");
 
         <!-- Dropdown menu -->
         <div id="dropdownNotification"
-        class="z-20 hidden w-full max-w-sm bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-800 dark:divide-gray-700"
+        class="z-20 hidden w-full max-w-sm bg-white divide-y divide-gray-100 rounded-lg shadow"
         aria-labelledby="dropdownNotificationButton">
         <div
-          class="block px-4 py-2 font-medium text-center text-gray-700 rounded-t-lg bg-gray-50 dark:bg-gray-800 dark:text-white">
+          class="block px-4 py-2 font-medium text-center text-gray-700 rounded-t-lg bg-gray-50">
           Notifications
         </div>
-        <div class="divide-y divide-gray-100 dark:divide-gray-700">
-          <a href="#" class="flex px-4 py-3 hover:bg-lime-400 dark:hover:bg-lime-400">
+        <div class="divide-y divide-gray-100">
+          <a href="#" class="flex px-4 py-3 hover:bg-lime-400">
             <div class="flex-shrink-0">
               <img class="rounded-full w-11 h-11" src="/docs/images/people/profile-picture-1.jpg" alt="Jese image">
               <div
-                class="absolute flex items-center justify-center w-5 h-5 ms-6 -mt-5 bg-blue-600 border border-white rounded-full dark:border-gray-800">
+                class="absolute flex items-center justify-center w-5 h-5 ms-6 -mt-5 bg-blue-600 border border-white rounded-full">
                 <svg class="w-2 h-2 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor" viewBox="0 0 18 18">
                   <path
@@ -62,15 +63,15 @@ include_once ("../include/procesar_formulario.php");
               </div>
             </div>
             <div class="w-full ps-3">
-              <div class="text-gray-500 text-sm mb-1.5 dark:text-gray-400">New message from <span
-                  class="font-semibold text-gray-900 dark:text-white">Jese Leos</span>: "Hey, what's up? All set for
+              <div class="text-gray-500 text-sm mb-1.5">New message from <span
+                  class="font-semibold text-gray-900 ">Jese Leos</span>: "Hey, what's up? All set for
                 the presentation?"</div>
               <div class="text-xs text-blue-600 dark:text-blue-500">a few moments ago</div>
             </div>
           </a>
         </div>
         <a href="#"
-          class="block py-2 text-sm font-medium text-center text-gray-900 rounded-b-lg bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white">
+          class="block py-2 text-sm font-medium text-center text-gray-900 rounded-b-lg bg-gray-50 hover:bg-gray-100 ">
           <div class="inline-flex items-center ">
             <svg class="w-4 h-4 me-2 text-gray-500 dark:text-gray-400" aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
@@ -90,8 +91,8 @@ include_once ("../include/procesar_formulario.php");
 
         <!-- Dropdown menu -->
         <div id="dropdownAvatarName"
-          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-          <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+          <div class="px-4 py-3 text-sm text-gray-900 ">
             <button data-modal-target="crud-modal" data-modal-toggle="crud-modal">
               <div class="font-medium ">Usuario</div>
               <div class="truncate ml-2"><?php
@@ -105,24 +106,24 @@ include_once ("../include/procesar_formulario.php");
             }
             ?></div>
             </button></div>
-          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+          <ul class="py-2 text-sm text-gray-700"
             aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
             <li>
               <a href="#"
-                class="block px-4 py-2 hover:bg-lime-400 dark:hover:bg-lime-400 dark:hover:text-white">Dashboard</a>
+                class="block px-4 py-2 hover:bg-lime-400 ">Dashboard</a>
             </li>
             <li>
               <a href="#"
-                class="block px-4 py-2 hover:bg-lime-400 dark:hover:bg-lime-400 dark:hover:text-white">Settings</a>
+                class="block px-4 py-2 hover:bg-lime-400 ">Settings</a>
             </li>
             <li>
               <a href="#"
-                class="block px-4 py-2 hover:bg-lime-400 dark:hover:bg-lime-400 dark:hover:text-white">Earnings</a>
+                class="block px-4 py-2 hover:bg-lime-400 ">Earnings</a>
             </li>
           </ul>
           <div class="py-2">
             <a href="#"
-              class="block px-4 py-2 text-sm text-gray-700 hover:bg-lime-400 dark:hover:bg-lime-400 dark:text-gray-200 dark:hover:text-white">Sign
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-lime-400">Sign
               out</a>
           </div>
         </div>
@@ -202,14 +203,14 @@ include_once ("../include/procesar_formulario.php");
           class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 bottom-0 z-50 w-80 md:w-80 bg-white md:shadow-lg">
           <div class="relative p-4 w-full max-w-md max-h-full">
             <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <div class="relative bg-white rounded-lg shadow ">
               <!-- Modal header -->
-              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t ">
+                <h3 class="text-lg font-semibold text-gray-900">
                   Perfil
                 </h3>
                 <button type="button"
-                  class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                  class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
                   data-modal-toggle="crud-modal">
                   <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 14 14">
@@ -232,26 +233,26 @@ include_once ("../include/procesar_formulario.php");
                     <label for="name"
                       class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre</label>
                     <input type="text" name="name" id="name"
-                      class="bg-gray-50 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                      class="bg-gray-50 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                       placeholder="Nombre" required="">
                   </div>
                   <div class="col-span-2">
                     <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Numero de
                       telefono</label>
                     <input type="text" name="name" id="name"
-                      class="bg-gray-50 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                      class="bg-gray-50 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                       placeholder="Numero de telefono" required="">
                   </div>
                   <div class="col-span-2">
                     <label for="description"
                       class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Info</label>
                     <textarea id="description" rows="4"
-                      class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-900 focus:ring-blue-500 focus:border-blue-500"
                       placeholder="Info"></textarea>
                   </div>
                 </div>
                 <button type="submit"
-                  class="text-white inline-flex items-center bg-lime-400 hover:bg-lime-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 border-gray-900">
+                  class="text-white inline-flex items-center bg-lime-400 hover:bg-lime-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center border-gray-900">
                   <i class="fa-solid fa-pen me-1 -ms-1 w-5 h-4 mt-1"></i>
                   Actualizar
                 </button>
@@ -263,22 +264,22 @@ include_once ("../include/procesar_formulario.php");
 
         <!-- Sections de invitar -->
 
-        <section class="bg-white dark:bg-gray-900">
+        <section class="bg-white">
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                 <div class="mx-auto max-w-screen-md sm:text-center">
-                    <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">Invitar Amigos</h2>
-                    <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.</p>
+                    <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">Invitar Amigos</h2>
+                    <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl">Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.</p>
                     <form action="#">
                         <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                             <div class="relative w-full">
-                                <label for="email" class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
+                                <label for="email" class="hidden mb-2 text-sm font-medium text-gray-900 ">Email address</label>
                                 <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"><i class="fas fa-users mr-2"></i>
                                 </div>
-                                <span class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-neutral-900 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" id="email" required="">www.TaskMaste.com</span>
+                                <span class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-neutral-900 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500" id="email" required="">www.TaskMaste.com</span>
                             </div>
                             <div>
                             
-                                <button type="submit" class="py-3 px-5 w-full text-sm font-medium text-center text-neutral-900 rounded-lg border cursor-pointer bg-lime-400 border-neutral-900 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"><i class="fa-solid fa-copy h-4"></i></button>
+                                <button type="submit" class="py-3 px-5 w-full text-sm font-medium text-center text-neutral-900 rounded-lg border cursor-pointer bg-lime-400 border-neutral-900 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300"><i class="fa-solid fa-copy h-4"></i></button>
                             </div>
                         </div>
                     </form>
@@ -291,14 +292,14 @@ include_once ("../include/procesar_formulario.php");
 
 <section class="bg-white dark:bg-gray-900">
     <div class="container px-6 py-10 mx-auto">
-        <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">Redes sociales</h1>
+        <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl">Redes sociales</h1>
         
         <a href="#">
         <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
             <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-blue-600 rounded-xl">
                 <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="../img/facebook-4.png" alt="">
                 
-                <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Facebook</h1>
+                <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize group-hover:text-white">Facebook</h1>
             </div></a>
 
             <a href="#">

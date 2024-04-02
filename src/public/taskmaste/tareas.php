@@ -201,7 +201,7 @@ include_once("../include/procesar_formulario.php");
                   <div class="col-span-2">
                     <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Numero de
                       telefono</label>
-                    <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="Numero de telefono" required=""/>
+                    <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="Numero de telefono" required="" />
                   </div>
                   <div class="col-span-2">
                     <label for="description" class="block mb-2 text-sm font-medium text-gray-900">Info</label>
@@ -271,73 +271,73 @@ include_once("../include/procesar_formulario.php");
                   Crear
                 </button>
               </div>
-              <!-- Modal -->
+              <!-- Modal de crear tarea-->
               <div id="defaultModal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full">
-  <div class="modal-content bg-white relative p-4 w-full max-w-2xl h-full md:h-auto rounded-lg shadow-lg">
-    <div class="modal-header flex justify-between border-b-2 pb-4 mb-4">
-      <h5 class="modal-title text-lg font-bold">Crear Tarea</h5>
-      <button type="button" class="text-gray-800 bg-transparent hover:bg-lime-400 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" onclick="closeModal()" data-modal-toggle="defaultModal">
-        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-        </svg>
-        <span class="sr-only">Close modal</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      <form action="../include/crear_tarea.php" method="POST" class="grid grid-cols-2 gap-4">
-        <div class="mb-4">
-          <label for="nombre_tarea" class="block text-gray-700 font-bold mb-2">Nombre de la Tarea:</label>
-          <input type="text" name="nombre_tarea" id="nombre_tarea" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-        </div>
-        <div class="mb-4">
-          <label for="archivo" class="block text-gray-700 font-bold mb-2">Adjuntar Archivo:</label>
-          <input type="file" name="archivo" id="archivo" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-        </div>
-        <div class="mb-4 col-span-2">
-          <label for="descripcion" class="block text-gray-700 font-bold mb-2">Descripción:</label>
-          <textarea name="descripcion" id="descripcion" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
-        </div>
-        <div class="mb-4">
-          <label for="fecha_inicio" class="block text-gray-700 font-bold mb-2">Fecha de Inicio:</label>
-          <input type="date" name="fecha_inicio" id="fecha_inicio" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-        </div>
-        <div class="mb-4">
-          <label for="fecha_finalizacion" class="block text-gray-700 font-bold mb-2">Fecha de Finalización:</label>
-          <input type="date" name="fecha_finalizacion" id="fecha_finalizacion" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-        </div>
-        <div class="mb-4">
-          <label for="estado" class="block text-gray-700 font-bold mb-2">Estado:</label>
-          <select name="estado" id="estado" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-            <option value="pendiente">Pendiente</option>
-            <option value="en_progreso">En Progreso</option>
-            <option value="completada">Completada</option>
-          </select>
-        </div>
-        <div class="mb-4">
-          <label for="prioridad" class="block text-gray-700 font-bold mb-2">Prioridad:</label>
-          <select name="prioridad" id="prioridad" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-            <option value="baja">Baja</option>
-            <option value="media">Media</option>
-            <option value="alta">Alta</option>
-          </select>
-        </div>
-        <div class="mb-4">
-          <label for="user_id" class="block text-gray-700 font-bold mb-2">ID del Usuario:</label>
-          <input type="number" name="user_id" id="user_id" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-        </div>
-        <div class="mb-4">
-          <label for="assigned_user_id" class="block text-gray-700 font-bold mb-2">ID del Usuario Asignado:</label>
-          <input type="number" name="assigned_user_id" id="assigned_user_id" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-        </div>
-        <div class="col-span-2 flex justify-end">
-          <button type="submit" class="text-gray-950 inline-flex items-center bg-lime-400 hover:bg-lime-600 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-            Crear Tarea
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
+                <div class="modal-content bg-white relative p-4 w-full max-w-2xl h-full md:h-auto rounded-lg shadow-lg">
+                  <div class="modal-header flex justify-between border-b-2 pb-4 mb-4">
+                    <h5 class="modal-title text-lg font-bold">Crear Tarea</h5>
+                    <button type="button" class="text-gray-800 bg-transparent hover:bg-lime-400 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" onclick="closeModal()" data-modal-toggle="defaultModal">
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="../include/crear_tarea.php" method="POST" class="grid grid-cols-2 gap-4">
+                      <div class="mb-4">
+                        <label for="nombre_tarea" class="block text-gray-700 font-bold mb-2">Nombre de la Tarea:</label>
+                        <input type="text" name="nombre_tarea" id="nombre_tarea" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                      </div>
+                      <div class="mb-4">
+                        <label for="archivo" class="block text-gray-700 font-bold mb-2">Adjuntar Archivo:</label>
+                        <input type="file" name="archivo" id="archivo" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                      </div>
+                      <div class="mb-4 col-span-2">
+                        <label for="descripcion" class="block text-gray-700 font-bold mb-2">Descripción:</label>
+                        <textarea name="descripcion" id="descripcion" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                      </div>
+                      <div class="mb-4">
+                        <label for="fecha_inicio" class="block text-gray-700 font-bold mb-2">Fecha de Inicio:</label>
+                        <input type="date" name="fecha_inicio" id="fecha_inicio" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                      </div>
+                      <div class="mb-4">
+                        <label for="fecha_finalizacion" class="block text-gray-700 font-bold mb-2">Fecha de Finalización:</label>
+                        <input type="date" name="fecha_finalizacion" id="fecha_finalizacion" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                      </div>
+                      <div class="mb-4">
+                        <label for="estado" class="block text-gray-700 font-bold mb-2">Estado:</label>
+                        <select name="estado" id="estado" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                          <option value="pendiente">Pendiente</option>
+                          <option value="en_progreso">En Progreso</option>
+                          <option value="completada">Completada</option>
+                        </select>
+                      </div>
+                      <div class="mb-4">
+                        <label for="prioridad" class="block text-gray-700 font-bold mb-2">Prioridad:</label>
+                        <select name="prioridad" id="prioridad" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                          <option value="baja">Baja</option>
+                          <option value="media">Media</option>
+                          <option value="alta">Alta</option>
+                        </select>
+                      </div>
+                      <div class="mb-4">
+                        <label for="user_id" class="block text-gray-700 font-bold mb-2">ID del Usuario:</label>
+                        <input type="number" name="user_id" id="user_id" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                      </div>
+                      <div class="mb-4">
+                        <label for="assigned_user_id" class="block text-gray-700 font-bold mb-2">ID del Usuario Asignado:</label>
+                        <input type="number" name="assigned_user_id" id="assigned_user_id" class="shadow-sm appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                      </div>
+                      <div class="col-span-2 flex justify-end">
+                        <button type="submit" class="text-gray-950 inline-flex items-center bg-lime-400 hover:bg-lime-600 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                          Crear Tarea
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
 
             </div>
           </div>

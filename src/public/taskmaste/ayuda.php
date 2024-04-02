@@ -11,6 +11,7 @@ include_once ("../include/procesar_formulario.php");
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../css/output.css">
   <title>TaskMaste</title>
 </head>
@@ -39,18 +40,18 @@ include_once ("../include/procesar_formulario.php");
         </button>
 
         <div id="dropdownNotification"
-        class="z-20 hidden w-full max-w-sm bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-800 dark:divide-gray-700"
+        class="z-20 hidden w-full max-w-sm bg-white divide-y divide-gray-100 rounded-lg shadow"
         aria-labelledby="dropdownNotificationButton">
         <div
-          class="block px-4 py-2 font-medium text-center text-gray-700 rounded-t-lg bg-gray-50 dark:bg-gray-800 dark:text-white">
+          class="block px-4 py-2 font-medium text-center text-gray-700 rounded-t-lg bg-gray-50">
           Notifications
         </div>
-        <div class="divide-y divide-gray-100 dark:divide-gray-700">
+        <div class="divide-y divide-gray-100 ">
           <a href="#" class="flex px-4 py-3 hover:bg-lime-400 dark:hover:bg-lime-400">
             <div class="flex-shrink-0">
               <img class="rounded-full w-11 h-11" src="/docs/images/people/profile-picture-1.jpg" alt="Jese image">
               <div
-                class="absolute flex items-center justify-center w-5 h-5 ms-6 -mt-5 bg-blue-600 border border-white rounded-full dark:border-gray-800">
+                class="absolute flex items-center justify-center w-5 h-5 ms-6 -mt-5 bg-blue-600 border border-white rounded-full">
                 <svg class="w-2 h-2 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor" viewBox="0 0 18 18">
                   <path
@@ -61,17 +62,17 @@ include_once ("../include/procesar_formulario.php");
               </div>
             </div>
             <div class="w-full ps-3">
-              <div class="text-gray-500 text-sm mb-1.5 dark:text-gray-400">New message from <span
-                  class="font-semibold text-gray-900 dark:text-white">Jese Leos</span>: "Hey, what's up? All set for
+              <div class="text-gray-500 text-sm mb-1.5">New message from <span
+                  class="font-semibold text-gray-900">Jese Leos</span>: "Hey, what's up? All set for
                 the presentation?"</div>
-              <div class="text-xs text-blue-600 dark:text-blue-500">a few moments ago</div>
+              <div class="text-xs text-blue-600">a few moments ago</div>
             </div>
           </a>
         </div>
         <a href="#"
-          class="block py-2 text-sm font-medium text-center text-gray-900 rounded-b-lg bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white">
+          class="block py-2 text-sm font-medium text-center text-gray-900 rounded-b-lg bg-gray-50 hover:bg-gray-100">
           <div class="inline-flex items-center ">
-            <svg class="w-4 h-4 me-2 text-gray-500 dark:text-gray-400" aria-hidden="true"
+            <svg class="w-4 h-4 me-2 text-gray-500 " aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
               <path
                 d="M10 0C4.612 0 0 5.336 0 7c0 1.742 3.546 7 10 7 6.454 0 10-5.258 10-7 0-1.664-4.612-7-10-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" />
@@ -89,8 +90,8 @@ include_once ("../include/procesar_formulario.php");
 
         <!-- Dropdown menu -->
         <div id="dropdownAvatarName"
-          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-          <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+          <div class="px-4 py-3 text-sm text-gray-900 ">
             <button data-modal-target="crud-modal" data-modal-toggle="crud-modal">
               <div class="font-medium ">Usuario</div>
               <div class="truncate ml-2"><?php
@@ -104,24 +105,24 @@ include_once ("../include/procesar_formulario.php");
             }
             ?></div>
             </button></div>
-          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+          <ul class="py-2 text-sm text-gray-700"
             aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
             <li>
               <a href="#"
-                class="block px-4 py-2 hover:bg-lime-400 dark:hover:bg-lime-400 dark:hover:text-white">Dashboard</a>
+                class="block px-4 py-2 hover:bg-lime-400">Dashboard</a>
             </li>
             <li>
               <a href="#"
-                class="block px-4 py-2 hover:bg-lime-400 dark:hover:bg-lime-400 dark:hover:text-white">Settings</a>
+                class="block px-4 py-2 hover:bg-lime-400">Settings</a>
             </li>
             <li>
               <a href="#"
-                class="block px-4 py-2 hover:bg-lime-400 dark:hover:bg-lime-400 dark:hover:text-white">Earnings</a>
+                class="block px-4 py-2 hover:bg-lime-400">Earnings</a>
             </li>
           </ul>
           <div class="py-2">
             <a href="#"
-              class="block px-4 py-2 text-sm text-gray-700 hover:bg-lime-400 dark:hover:bg-lime-400 dark:text-gray-200 dark:hover:text-white">Sign
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-lime-400">Sign
               out</a>
           </div>
         </div>
@@ -201,14 +202,14 @@ include_once ("../include/procesar_formulario.php");
           class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 bottom-0 z-50 w-80 md:w-80 bg-white md:shadow-lg">
           <div class="relative p-4 w-full max-w-md max-h-full">
             <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <div class="relative bg-white rounded-lg shadow ">
               <!-- Modal header -->
-              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                <h3 class="text-lg font-semibold text-gray-900 ">
                   Perfil
                 </h3>
                 <button type="button"
-                  class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                  class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
                   data-modal-toggle="crud-modal">
                   <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 14 14">
@@ -222,30 +223,30 @@ include_once ("../include/procesar_formulario.php");
                 <img class="object-cover w-24 h-24 mx-2 rounded-full"
                   src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
                   alt="avatar">
-                <p class="mx-2 mt-1 text-sm font-medium text-gray-600 dark:text-gray-400">john@example.com</p>
+                <p class="mx-2 mt-1 text-sm font-medium text-gray-600 ">john@example.com</p>
               </div>
               <!-- Modal body -->
               <form class="p-4 md:p-5">
                 <div class="grid gap-4 mb-4 grid-cols-2">
                   <div class="col-span-2">
                     <label for="name"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre</label>
+                      class="block mb-2 text-sm font-medium text-gray-900">Nombre</label>
                     <input type="text" name="name" id="name"
-                      class="bg-gray-50 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                      class="bg-gray-50 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                       placeholder="Nombre" required="">
                   </div>
                   <div class="col-span-2">
-                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Numero de
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Numero de
                       telefono</label>
                     <input type="text" name="name" id="name"
-                      class="bg-gray-50 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                      class="bg-gray-50 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                       placeholder="Numero de telefono" required="">
                   </div>
                   <div class="col-span-2">
                     <label for="description"
                       class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Info</label>
                     <textarea id="description" rows="4"
-                      class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-900 focus:ring-blue-500 focus:border-blue-500"
                       placeholder="Info"></textarea>
                   </div>
                 </div>
@@ -262,12 +263,12 @@ include_once ("../include/procesar_formulario.php");
 
         <!-- Titulo de ayuda -->
 
-        <section class="bg-white dark:bg-gray-900">
+        <section class="bg-white">
             <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Ayuda y soporte</h1>
-                <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">Ayuda y soporte</h1>
+                <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 ">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
                 <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                    <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-neutral-900 rounded-lg bg-lime-400 hover:bg-lime-600 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-neutral-900 rounded-lg bg-lime-400 hover:bg-lime-600 focus:ring-4 focus:ring-primary-300 ">
                         Manual de usuario
                         <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                     </a>
