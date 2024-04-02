@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/estilofor.css">
+    <title>signin-signup</title>
+</head>
+<body>
+    <div class="container">
+        <div class="signin-signup">
+            <!-- Formulario de inicio de sesión -->
+            <form action="../public/include/procesar_formulario.php" method="POST" class="sign-in-form" name="login-form">
+                <h2 class="title">Iniciar Sesión</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="nombre_usuario" placeholder="Nombre de usuario">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="contrasena" placeholder="Contraseña">
+                </div>
+                <input type="submit" name="login-submit" value="Acceder" class="btn">
+                <p class="social-text">
+                    O inicie sesión con la plataforma social</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">¿Ya tienes una cuenta? <a href="#" id="sign-in-btn2">REGISTRARSE</a></p>
+            </form>
+            
+            <!-- Formulario de registro -->
+            <form action="../public/include/procesar_formulario.php" method="POST" class="sign-up-form" name="registro-form">
+                <h2 class="title">REGISTRARSE</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="nombre_usuario" placeholder="Nombre de usuario">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" name="correo_electronico" placeholder="Correo electronico">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="contrasena" placeholder="Contraseña">
+                </div>
+                <input type="submit" name="registro-submit" value="REGISTRARSE" class="btn">
+                <p class="social-text">O inicie sesión con la plataforma social</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">¿Ya tienes una cuenta? <a href="#" id="sign-in-btn2">ACCEDER</a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusantium dolor, eos incidunt minima iure?</p>
+                    <button class="btn" id="sign-in-btn">ACCEDER</button>
+                </div>
+                <img src="img/Registro.svg" alt="" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>¿No tienes cuenta?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusantium dolor, eos incidunt minima iure?</p>
+                    <button class="btn" id="sign-up-btn">REGISTRARSE</button>
+                </div>
+                <img src="img/Inicio.svg" alt="" class="image">
+            </div>
+        </div>
+    </div>
+    <script src="animacion/formulario.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "taskmaste",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scanTailwind": "npx tailwindcss -i \"./src/public/css/input.css\" -o \"./src/public/css/output.css\" --watch"
+  },
+  "author": "Sebastian Lasso",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "flowbite": "^2.3.0",
+    "flowbite-datepicker": "^1.2.6",
+    "mysql": "^2.18.1"
+  },
+  "keywords": [],
+  "description": ""
+}
